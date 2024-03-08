@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form id="jobApplicationForm">
+            <!-- Personal Information -->
+            <h2>Personal Information</h2>
+            <div class="form-group">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="streetAddress" placeholder="Street Address" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="state" placeholder="State" required>
+                <input type="text" id="zipCode" placeholder="ZIP Code" required>
+            </div>
+
+            <!-- Resume and Cover Letter -->
+            <h2>Resume and Cover Letter</h2>
+            <div class="form-group">
+                <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+            <div class="form-group">
+                <textarea id="coverLetter" placeholder="Cover Letter"></textarea>
+            </div>
+
+            <!-- Education -->
+            <h2>Education</h2>
+            <div class="form-group">
+                <input type="text" id="educationLevel" placeholder="Highest Education Level" required>
+                <input type="text" id="university" placeholder="School/University" required>
+                <input type="text" id="major" placeholder="Major/Area of Study" required>
+                <input type="text" id="graduationYear" placeholder="Graduation Year" required>
+            </div>
+
+            <!-- Employment History -->
+            <h2>Employment History</h2>
+            <div class="form-group">
+                <input type="text" id="jobTitle" placeholder="Previous Job Title" required>
+                <input type="text" id="companyName" placeholder="Company Name" required>
+                <input type="text" id="employmentDates" placeholder="Employment Dates" required>
+                <textarea id="jobResponsibilities" placeholder="Job Responsibilities"></textarea>
+            </div>
+
+            <!-- Skills -->
+            <h2>Skills</h2>
+            <div class="form-group">
+                <textarea id="relevantSkills" placeholder="Relevant Skills"></textarea>
+                <textarea id="certifications" placeholder="Certifications"></textarea>
+            </div>
+
+            <!-- Availability -->
+            <h2>Availability</h2>
+            <div class="form-group">
+                <input type="date" id="startDate" placeholder="Start Date" required>
+                <input type="text" id="workSchedule" placeholder="Preferred Work Schedule" required>
+                <label for="relocate">Willing to Relocate:</label>
+                <input type="checkbox" id="relocate">
+            </div>
+
+            <!-- References -->
+            <h2>References</h2>
+            <div class="form-group">
+                <input type="text" id="referenceName" placeholder="Reference Name" required>
+                <input type="text" id="referenceContact" placeholder="Reference Contact Info" required>
+                <input type="text" id="relationship" placeholder="Relationship to Applicant" required>
+            </div>
+
+            <!-- Additional Questions -->
+            <h2>Additional Questions</h2>
+            <div class="form-group">
+                <textarea id="whyWorkHere" placeholder="Why do you want to work for this company?"></textarea>
+            </div>
+
+            <!-- Consent and Agreement -->
+            <div class="form-group">
+                <label for="consent">I agree to the terms and conditions:</label>
+                <input type="checkbox" id="consent" required>
+                <label for="privacyPolicy">I acknowledge the Privacy Policy:</label>
+                <input type="checkbox" id="privacyPolicy" required>
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+        <button id="viewAsTableBtn">View Applications as Table</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
